@@ -1,0 +1,5 @@
+asyncio
+pyyaml
+sqlite3
+asyncio-mqtt
+python-dotenv
