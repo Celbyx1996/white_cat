@@ -1,0 +1,25 @@
+# WHITE_CAT Configuration
+
+logging:
+  level: INFO
+  file: logs/white_cat.log
+
+database:
+  path: data/white_cat.db
+
+tier1:
+  enabled: true
+  auditd_rules: 
+    - execve
+    - open
+    - connect
+
+tier2:
+  enabled: true
+  interface: eth0
+  protocols: [TCP, UDP, ICMP]
+
+tier3:
+  enabled: true
+  model_path: models/qwen3-0.6b
+  threshold: 0.7
